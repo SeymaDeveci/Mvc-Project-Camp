@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<header><h1>İstatistikler</h1></header>
+<br/>
+<body>
+
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-blue">
+                <div class="inner" style="text-align: center">
+                    <h3>@ViewBag.numberOfCategories</h3>
+                    <p>Toplam Kategori Sayısı</p>
+                    <br />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-gradient-green">
+                <div class="inner" style="text-align: center">
+                    <h3>@ViewBag.numberOfSoftwareTitles</h3>
+                    <p>Yazılım Kategorisine Ait Başlık Sayısı</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-gradient-teal">
+                <div class="inner" style="text-align: center">
+                    <h3>@ViewBag.writerNameContainA</h3>
+                    <p>Yazar Adında A Harfi Geçen Yazar Sayısı</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-gradient-red">
+                <div class="inner" style="text-align: center">
+                    <h3>@ViewBag.mostTitlesCategoryName</h3>
+                    <p>En Fazla Başlığa Sahip Olan Kategori Adı</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-orange">
+                <div class="inner" style="text-align: center">
+                    <h3>@ViewBag.categoryStatusTrue</h3>
+                    <p>Kategori Tablosunda Durumu True Olan Kategoriler</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-fuchsia">
+                <div class="inner" style="text-align: center">
+                    <h3>@ViewBag.categoryStatusFalse</h3>
+                    <p>Kategori Tablosunda Durumu False Olan Kategoriler</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
