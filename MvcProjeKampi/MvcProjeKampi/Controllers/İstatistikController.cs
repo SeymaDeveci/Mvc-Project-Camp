@@ -38,6 +38,10 @@ namespace MvcProjeKampi.Controllers
             var categoryStatusFalse = context.Categories.Count(x => x.CategoryStatus == false);
             ViewBag.categoryStatusFalse = categoryStatusFalse;
 
+            //True ile false olanların farkı
+            var differenceStatus = categoryStatusTrue - categoryStatusFalse;
+            ViewBag.differenceStatus = differenceStatus;
+
             return View();
         }
     }
